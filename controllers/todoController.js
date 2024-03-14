@@ -1,9 +1,9 @@
 module.exports = function (app) {
    app.get('/todo', function (req, res) {
-      
+      res.render('todo');
    });
 
-   app.post('/todo', urlEncodedParser, function (req, res) {
+   app.post('/todo', function (req, res) {
      
    });
 
