@@ -1,6 +1,5 @@
 const express = require('express');
 
-
 const todoController = require('./controllers/todoController');
 
 const bodyParser = require('body-parser');
