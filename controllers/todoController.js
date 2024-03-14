@@ -13,7 +13,10 @@ module.exports = function (app) {
    });
 
    app.delete('/todo/:item', function (req, res) {
-      
+      data = data.filter(function (data) {
+         return todo.item.replace(/ /g, "") !== req.params.item;
+      });
+      res.json(data);
    });
 
 };
